@@ -1,9 +1,7 @@
 body{
     width: 100%;
-    
     margin: 0;
     padding: 0;
-    
 }
 
 .container-principal{
@@ -28,8 +26,8 @@ body{
 }
 .video_externo, .podcast{
     width: 100%;
-    
 }
+
 .podcast {
     margin-top: 35px; 
 }
@@ -38,7 +36,6 @@ body{
     width: 100%;
     margin: 20px 0;
     box-sizing: border-box;
-
 }
 
 .tabela_cursos{
@@ -61,6 +58,7 @@ body{
     font-size: 20px;
     padding: 5px;
 }
+
 .container_texto_titulo{
     color: #4141da;
 }
