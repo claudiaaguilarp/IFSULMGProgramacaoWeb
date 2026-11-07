@@ -4,62 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ultra&display=swap" rel="stylesheet">
     <title>Exercício Programação Web</title>
 </head>
 <body class="container-principal">
     <main>
+        <h2 class="titulo">Exercício Programação Web</h2>
         <section class="midia">
-            <h2>Exercício Programação Web</h2>
-            <article class="video_externo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rsfAiz-qLL4?si=MwrYch1kvh5RJ1Ka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article>
+                <iframe  height="315" src="https://www.youtube.com/embed/rsfAiz-qLL4?si=MwrYch1kvh5RJ1Ka" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  class="video_externo" ></iframe>
             </article>
             <article class="podcast">
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/173TBievQFNy2FciDk4VaX?utm_source=generator&si=544892d841c84095" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/173TBievQFNy2FciDk4VaX?utm_source=generator&si=544892d841c84095" width="100%" height="315" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="podcast"></iframe>
             </article>
         </section>
         <section class="cursos">
             <table class="tabela_cursos">
                 <thead>
                     <caption class="informacao_tabela"> Comparativo De Cursos</caption>
-                    <tr>
+                    <tr class="cabecalho">
                         <th>Curso</th>
+                        <th colspan="2" >Detalhes Acadêmicos</th>
+                    </tr>
+                    <tr>
+                        <th>Nome do Curso</th>
                         <th>Duração</th>
                         <th>Formação</th>
                     </tr>
                 </thead>
                 <tr>
-                    <th>Informática para a Internet</th>
-                    <th>1 a 1,5 anos</th>
-                    <th>Técnico</th>
+                    <td>Informática para a Internet</td>
+                    <td>1 a 1,5 anos</td>
+                    <td rowspan="2">Técnico</td>
                 </tr>
                 <tr>
-                    <th>Análise e Desenvolvimento de Sistemas</th>
-                    <th>1 a 1,5 anos</th>
-                    <th>Técnico</th>
+                    <td>Análise e Desenvolvimento de Sistemas</td>
+                    <td>1 a 1,5 anos</td>
+                    
                 </tr>
                 <tr>
-                    <th>Análise e Desenvolvimento de Sistemas</th>
-                    <th>2 a 2,5 anos</th>
-                    <th>Tecnólogo/Superior</th>
+                    <td>Análise e Desenvolvimento de Sistemas</td>
+                    <td>2 a 2,5 anos</td>
+                    <td>Tecnólogo/Superior</td>
                 </tr>
                 <tr>
-                    <th>Sistemas de Informação</th>
-                    <th>4 anos</th>
-                    <th>Graduação/Bacharelado</th>
+                    <td>Sistemas de Informação</td>
+                    <td>4 anos</td>
+                    <td rowspan="3">Graduação/Bacharelado</td>
                 </tr>
                 <tr>
-                    <th>Ciência da Computação</th>
-                    <th>4 anos</th>
-                    <th>Graduação/Bacharelado</th>
+                    <td>Ciência da Computação</td>
+                    <td>4 anos</td>
                 </tr>
                 <tr>
-                    <th>Engenharia de Software</th>
-                    <th>4 anos</th>
-                    <th>Graduação/Bacharelado</th>
+                    <td>Engenharia de Software</td>
+                    <td>4 anos</td>
                 </tr>
                     
-                </caption>
+                
             </table>
+        </section>
+        <section class="container_texto">
+            
+            <h3 class="container_texto_titulo">Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras velscelerisque lectus, tempor tempor turpis. Pellentesque ultrices laoreet mibibendum dapibus. Sed a diam non dui tincidunt vestibulum quis at mi. Proinsollicitudin iaculis mollis. Vestibulum convallis scelerisque nisl, vitaecursus mauris euismod ornare. Aenean condimentum ultricies mi id rhoncus.Praesent malesuada.
+
+                Vivamus tempor commodo dolor et faucibus. Etiam fringilla finibus ipsum,eget tempus libero vestibulum sed. Phasellus convallis maximus purus, nectempor lacus ullamcorper sit amet. Aenean feugiat tempus quam, non mattisturpis tempus id. Nullam gravida eu velit ut hendrerit. Nullam rhoncusfelis sapien, ut facilisis ante tincidunt ac. Nullam felis risus, pulvinarsed sagittis non, fringilla ut sem. Proin elit nisi, volutpat non molestienec, vestibulum nec erat. Morbi at leo mattis, imperdiet est in, rutrummassa. Aliquam id magna blandit, rutrum risus aliquam, dignissim velit.Fusce ut ipsum egestas.
+
+                Morbi fringilla ultrices quam, ut suscipit ex sodales sed. Praesent ligulatortor, sollicitudin in iaculis et, vestibulum nec urna. Phasellus egetmollis urna. Aliquam erat volutpat. Nulla facilisi. Duis ac nisi vitaelacus aliquam egestas. Integer vulputate nulla ac ligula ullamcorperpretium. Etiam id turpis eget magna imperdiet rutrum at sit amet ligula. Etiam at egestas nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin commodo ipsum eu elit egestas, a efficitur nunc efficitur.
+                Morbi fringilla ultrices quam, ut suscipit ex sodales sed. Praesent ligulatortor, sollicitudin in iaculis et, vestibulum nec urna. Phasellus egetmollis urna. Aliquam erat volutpat. Nulla facilisi. Duis ac nisi vitaelacus aliquam egestas. Integer vulputate nulla ac ligula ullamcorperpretium. Etiam id turpis eget magna imperdiet rutrum at sit amet ligula.Etiam at egestas nulla. Interdum et malesuada fames ac ante ipsum primis infaucibus.
+            </p>
+            <h3 class="container_texto_titulo">Lorem Ipsum</h3>
+            <p>
+                Morbi fringilla ultrices quam, ut suscipit ex sodales sed. Praesent ligulatortor, sollicitudin in iaculis et, vestibulum nec urna. Phasellus egetmollis urna. Aliquam erat volutpat. Nulla facilisi. Duis ac nisi vitaelacus aliquam egestas. Integer vulputate nulla ac ligula ullamcorperpretium. Etiam id turpis eget magna imperdiet rutrum at sit amet ligula.Etiam at egestas nulla. Interdum et malesuada fames ac ante ipsum primis infaucibus. Proin commodo ipsum eu elit egestas, a efficitur nunc efficitur.
+                Sed nec auctor tortor, in dapibus ante. Etiam in leo semper, mattis loremnon, accumsan augue. Nullam nec ex eleifend, aliquet nunc vel, blanditurna. Nullam scelerisque ullamcorper nisi sit amet porttitor. Nullamgravida, ligula eget scelerisque sagittis, nulla quam porta nisl, etiaculis urna metus quis sapien. 
+                Praesent sit amet sapien faucibus, sodales est sit amet, dictum odio. Crassed turpis eget ex pretium lobortis. Aliquam erat volutpat. Pellentesque acaugue eu ipsum fringilla laoreet in id nisl. Aliquam commodo lacinia auguequis laoreet. Nunc odio nunc, ultricies nec eleifend sed, tempus id erat. Etiam vitae sapien vitae nulla viverra venenatis sit amet sed lectus. Vestibulum molestie efficitur libero, ac ullamcorper sem ultricies vitae. Nullam lacinia leo ac nulla tempor, ut volutpat ex dictum. Suspendisse sollicitudin lorem non tortor dapibus, vitae rhoncus augue dapibus.
+                Sed nec auctor tortor, in dapibus ante. Etiam in leo semper, mattis loremnon, accumsan augue. Nullam nec ex eleifend, aliquet nunc vel, blanditurna. Nullam scelerisque ullamcorper nisi sit amet porttitor. Nullamgravida, ligula eget scelerisque sagittis, nulla quam porta nisl, etiaculis urna metus quis sapien. Vestibulum eget diam mi. In hac habitasseplatea dictumst. Praesent tincidunt mi vel tincidunt tempus. Donec eleifendnisl tempus rutrum efficitur. Maecenas ac cursus justo. Sed faucibus justoid ex feugiat cursus. Cras sollicitudin lobortis dolor ac euismod.
+            </p>
         </section>
 
     </main>
