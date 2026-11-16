@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho-f1">
+        <h1 class="titulo-principal">UNIVERSO DA FORMULA 1</h1>
+        <h2 class="subt">Temporada Oficial e Paixão por Velocidade</h2>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#pilotos" title="Ir para a seção de pilotos">Pilotos</a></li>
+                <li><a href="#tabela" title="Ver tabela de equipes">Tabela</a></li>
+                <li><a href="#multimidia" title="Assistir vídeos e podcasts">Mídia</a></li>
+                <li><a href="http://www.formula1.com" target="_blank" title="Visitar o site oficial da F1">Site Oficial F1</a></li>
+                <li><a href="http://www.fia.com" target="_blank" title="Visitar o site da FIA">FIA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="pilotos" class="secao-pilotos">
+        <h2>Lideres do Campeonato</h2>
+        <p>Desempenho atual dos principais nomes da temporada.</p>
+        <div class="podium-container">
+            <article class="card-piloto card-mercedes pos-1">
+                <div class="dados-card">
+                    <span class="posicao">1º<sup>ST</sup></span>
+                    <h3 class="nome">Kimi<br>Antonelli</h3>
+                    <p class="equipe">Mercedes</p>
+                    <img src="https://flagcdn.com/w40/it.png" alt="Bandeira da Itália" class="bandeira">
+                </div>
+                <div class="foto-container">
+                    <img src="imagens/2026mercedeskimi12.avif" alt="Kimi Antonelli">
+                </div>
+                <div class="pontuacao">
+                    <strong>390</strong>PTS
+                </div>
+            </article>
+            <article class="card-piloto card-redbull pos-2">
+                <div class="dados-card">
+                    <span class="posicao"> 2º<sup>ND</sup></span>
+                    <h3 class="nome">Max<br>Verstappen</h3>
+                    <p class="equipe">Red Bull Racing</p>
+                    <img src="https://flagcdn.com/w40/nl.png" alt="Bandeira dos Países Baixos" class="bandeira">
+                </div>
+                <div class="foto-container">
+                    <img src="imagens/2026redbullracingmaxver3.avif" alt="Max Verstappen">
+                </div>
+                <div class="pontuacao">
+                    <strong>279</strong>PTS
+                </div>
+            </article>
+            <article class="card-piloto card-mercedes pos-3">
+                <div class="dados-card">
+                    <span class="posicao">3<sup>RD</sup></span>
+                    <h3 class="nome">George<br>Russell</h3>
+                    <p class="equipe">Mercedes</p>
+                    <img src="https://flagcdn.com/w40/gb.png" alt="Bandeira da Inglaterra" class="bandeira">
+                </div>
+                <div class="foto-container">
+                    <img src="imagens/2026mercedesgeorus63.avif" alt="George Russell">
+                </div>
+                <div class="pontuacao">
+                    <strong>262</strong>PTS
+                </div>
+            </article>
+            <div class="container-link-secundario">
+            <a href="pilotos.html" title="Acessar listagem completa de pilotos da temporada">Ver todos os pilotos &rarr;</a>
+            </div>
+        </div>
+    </section>
+    <section id="tabela" class="secao-tabela">
+        <h2>Classificação de Equipes</h2>
+        <p class="sub-titulo">
+            Pontuação atualizada das equipes nessa temporada.
+        </p>
+
+        <table class="tabela-f1">
+            <caption>Tabela oficial de pontos do campeonato mundial</caption>
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Equipes</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td>Mercedes</td>
+                    <td><strong>652</strong></td>
+                </tr>
+                 <tr>
+                    <td>2º</td>
+                    <td>Ferrari</td>
+                    <td><strong>510</strong></td>
+                </tr>
+                  <tr>
+                    <td>3º</td>
+                    <td>Red Bull Racing</td>
+                    <td><strong>415</strong></td>
+                </tr>
+                  <tr>
+                    <td>4º</td>
+                    <td>McLaren</td>
+                    <td><strong>398</strong></td>
+                </tr>
+                 <tr>
+                    <td>5º</td>
+                    <td>Racing Bulls</td>
+                    <td><strong>114</strong></td>
+                </tr>
+                 <tr>
+                    <td>6º</td>
+                    <td>Alpine</td>
+                    <td><strong>69</strong></td>
+                </tr>
+                 <tr>
+                    <td>7º</td>
+                    <td>Hass F1 Team</td>
+                    <td><strong>31</strong></td>
+                </tr>
+                <tr>
+                    <td>8º</td>
+                    <td>Audi</td>
+                    <td><strong>28</strong></td>
+                </tr>
+                <tr>
+                    <td>9º</td>
+                    <td>Williams</td>
+                    <td><strong>12</strong></td>
+                </tr>
+                <tr>
+                    <td>10º</td>
+                    <td>Aston Martin</td>
+                    <td><strong>7</strong></td>
+                </tr>
+                <tr>
+                    <td>11º</td>
+                    <td>Cadillac</td>
+                    <td><strong>0</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <section id="multimidia" class="secao-multimidia">
+        <h2>Multimidia F1</h2>
+        <p class="sub-titulo">Acompanhe com os vídeos e episódios de podcast sobre o  que rola na F1</p>
+        <div class="multimidia-container">
+            <article class="card-multimidia">
+                <h3>Vídeo em destaque</h3>
+                <div class="video-midia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tAsnLDNWrHY?si=BgAS8_o3dHe5G-OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article class="card-multimidia">
+                <h3>Podcast Oficial</h3>
+                <div class="podcast-wrapper">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5let4JjiUZUh0NjjhVwDDg?utm_source=generator&si=6f1060cfd41f4cd1" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="noticias" class="secao-noticias">
+        <h2>Últimas do Paddock</h2>
+        <p class="sub-titulo">Cobertura jornalística e atualizações oficiais da Fórmula 1.</p>
+        <div class="noticias-container">
+            <article class="card-noticia">
+                <h3>Antonelli aponta a maior ameaça à defesa de seu título em 2027</h3>
+                <p>O atual campeão mundial Kimi Antonelli analisou o cenário competitivo para a próxima temporada e apontou Max Verstappen, da Red Bull, como o adversário que representará o maior desafio na defesa da sua coroa, projetando uma disputa acirrada entre as escuderias de ponta.</p>
+                <p class="credito-fonte">Fonte: <a href="https://www.formula1.com/en/latest/article/antonelli-identifies-which-driver-poses-the-biggest-threat-to-his-title-defence-in-2027.6qjcpNnf8IerbXck8NpB05" target="_blank"> Portal Oficial F1</a></p>
+            </article>
+            <article class="card-noticia">
+                <h3>GP de São Paulo movimenta R$ 2,63 bilhões e gera 28 mil empregos, diz FGV</h3>
+                <p>Estudo aponta alta real de 11,9% no impacto econômico sobre 2025; contrato da prova com a Fórmula 1 foi renovado até 2035.</p>
+                <p class="credito-fonte">Fonte: <a href="https://spdiario.com.br/noticias/economia/gp-sao-paulo-de-f1-movimenta-r-2-63-bilhoes-e-gera-28-mil-empregos-diz-fgv.html" target="_blank" title="Ler matéria completa no SP Diário">SP Diário</a></p>
+            </article>
+        </div>
+    </section>
+    <section class="secao-listas">
+        <h2>Glossário do Paddock</h2>
+        <p class="sub-titulo-listas">
+            Termos essenciais para entender a engenharia da Fórmula 1.
+        </p>
+        <div class="lista-container">
+            <dl class="glossario-f1">
+                <dt>DRS (Drag Reduction System)</dt>
+                <dd>Sistema móvel na asa traseira acionado em zonas específicas para reduzir o arrasto aerodinâmico e facilitar ultrapassagens.</dd>
+            </dl>
+            <dl class="glossario-f1">
+                <dt>Downforce(Pressão Aerodinâmica)</dt>
+                <dd>Força descendente gerada pelas asas e carroceria que "cola" o o carro no chão, pemitindo curvas em alta velocidade.</dd>
+            </dl>
+            <dl class="glossario-f1">
+                <dt>Undercut</dt>
+                <dd>Estratégia de paradas nos boxes antecipada para tentar ganhar a posição de um adversário através de voltas rápidas com pneus novos.</dd>
+            </dl>
+        </div>
+    </section>
+    <footer class="rodape-f1">
+        <p>&copy; 2026 - PortalF1 | Desenvolvido por Cláudia Aguilar</p>
+        <p>Estudante de Informática para a Internete da IFSULDEMINAS</p>
+        <p><a href="#" title="Retornar ao topo da página">Voltar ao topo &uarr;</a></p>
+    </footer>
+    
+</body>
+</html>
