@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Aprendendo Formulários</title>
+</head>
+<body>
+    <main class="container">
+        <section class="cabecalho">
+            <img src="imagens/avatar.png" alt="Avatar de uma mulher" class="avatar">
+            <h1>Aprendendo Formulários</h1>
+            <p>Este formulário permite o cadastro completo de informações pessoais, dados de acesso e preferências utilizando validações nativas do HTML5 antes do envio.</p>
+        </section>
+
+        <section class="container-sec">
+            <div class="container-formulario">
+                <form action="recebedados.html" method="post">
+                    <fieldset class="grupo-secao">
+                        <legend>Dados Pessoais</legend>
+
+                        <div class="campo">
+                            <label for="nome-completo">Nome Completo</label>
+                            <input
+                                type="text"
+                                name="nomeCompleto"
+                                id="nome-completo"
+                                placeholder="Digite seu nome completo"
+                                maxlength="50"
+                                pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+( [A-Za-zÀ-ÖØ-öø-ÿ]+)+"
+                                title="Digite seu nome completo sem números"
+                                autofocus
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="data-nascimento">Data de Nascimento</label>
+                            <input
+                                type="date"
+                                name="dataNascimento"
+                                id="data-nascimento"
+                                min="1920-01-01"
+                                max="2008-10-08"
+                                title="Você deve ter pelo menos 18 anos"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input
+                                type="tel"
+                                name="telefone"
+                                id="telefone"
+                                placeholder="11 99999-9999"
+                                pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                                title="Formato exigido: DDD + Número (ex: 11 99999-9999)"
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="genero-masculino">Gênero</label>
+                            <div class="opcoes-linha">
+                                <label class="opcao-item" for="genero-masculino">
+                                    <input type="radio" name="genero" id="genero-masculino" value="Masculino">
+                                    <span>Masculino</span>
+                                </label>
+                                <label class="opcao-item" for="genero-feminino">
+                                    <input type="radio" name="genero" id="genero-feminino" value="Feminino">
+                                    <span>Feminino</span>
+                                </label>
+                                <label class="opcao-item" for="genero-outro">
+                                    <input type="radio" name="genero" id="genero-outro" value="Outro">
+                                    <span>Outro</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="pais">País de Residência</label>
+                            <select name="pais" id="pais">
+                                <option value="" disabled selected>Selecione...</option>
+                                <optgroup label="América do Sul">
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Chile">Chile</option>
+                                </optgroup>
+                                <optgroup label="América do Norte">
+                                    <option value="Canadá">Canadá</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="México">México</option>
+                                </optgroup>
+                                <optgroup label="Europa">
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Espanha">Espanha</option>
+                                    <option value="Alemanha">Alemanha</option>
+                                </optgroup>
+                                <optgroup label="Ásia">
+                                    <option value="Japão">Japão</option>
+                                    <option value="Coreia do Sul">Coreia do Sul</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="foto-perfil">Foto de Perfil</label>
+                            <input
+                                type="file"
+                                name="fotoPerfil"
+                                id="foto-perfil"
+                                accept="image/*"
+                            >
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-secao">
+                        <legend>Acesso</legend>
+
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="seuemail@exemplo.com"
+                                autocomplete="email"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                title="Digite um e-mail válido"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <input
+                                type="password"
+                                name="senha"
+                                id="senha"
+                                placeholder="Digite sua senha (mín. 8 caracteres)"
+                                minlength="8"
+                                title="A senha deve ter no mínimo 8 caracteres"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="confirmar-senha">Confirmar Senha</label>
+                            <input
+                                type="password"
+                                name="confirmarSenha"
+                                id="confirmar-senha"
+                                placeholder="Repita sua senha (mín. 8 caracteres)"
+                                minlength="8"
+                                title="Confirme sua senha com no mínimo 8 caracteres"
+                                required
+                            >
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grupo-secao">
+                        <legend>Preferências</legend>
+
+                        <div class="campo">
+                            <div class="opcoes-coluna">
+                                <label class="opcao-item" for="promocoes">
+                                    <input type="checkbox" name="promocoes" id="promocoes" value="sim">
+                                    <span>Desejo receber promoções</span>
+                                </label>
+                                <label class="opcao-item" for="termos">
+                                    <input type="checkbox" name="termos" id="termos" value="aceito" required>
+                                    <span>Li e aceito os termos de uso</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="comentarios">Comentários Adicionais</label>
+                            <textarea
+                                name="comentarios"
+                                id="comentarios"
+                                rows="4"
+                                maxlength="200"
+                                placeholder="Escreva até 200 caracteres..."
+                            ></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="acoes">
+                        <button type="submit">Enviar Dados</button>
+                        <button type="reset" class="btn-limpar">Limpar Formulário</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

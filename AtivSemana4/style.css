@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --cor-fundo-principal: #F6E2E0;
+    --container: #f7dfc7;
+    --fundo-formulario: #FFFFFF;
+    --borda-formulario: #E2C8C5;
+    --botao-envio: #C66B5E;
+    --botao-envio-hover: #a95647;
+    --texto-principal: #2E2423;
+    --texto-secundario: #6B5B59;
+    --area-focada: #f0c295;
+}
+
+body {
+    background-color: var(--cor-fundo-principal);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+}
+
+.container {
+    background-color: var(--container);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(46, 36, 35, 0.12);
+    border-radius: 16px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 520px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+.cabecalho h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--texto-principal);
+}
+
+.cabecalho p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--texto-principal);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(44, 30, 27, 0.12);
+}
+
+.container-sec {
+    width: 100%;
+    max-width: 480px;
+}
+
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-formulario form {
+    background-color: var(--fundo-formulario);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(44, 30, 27, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.grupo-secao {
+    border: 1px solid var(--borda-formulario);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+}
+
+.grupo-secao legend {
+    padding: 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 6px;
+    color: var(--texto-principal);
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--texto-principal);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--borda-formulario);
+    border-radius: 8px;
+    background-color: var(--fundo-formulario);
+    color: var(--texto-principal);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--texto-secundario);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--area-focada);
+    box-shadow: 0 0 0 3px rgba(240, 194, 149, 0.35);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.opcoes-linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 2px;
+}
+
+.opcoes-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.opcao-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 400 !important;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--botao-envio);
+    cursor: pointer;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    background-color: var(--botao-envio);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--botao-envio-hover);
+}
+
+.btn-limpar {
+    background-color: transparent;
+    color: var(--texto-principal);
+    border: 1px solid var(--borda-formulario);
+}
+
+.btn-limpar:hover {
+    background-color: var(--cor-fundo-principal);
+}
