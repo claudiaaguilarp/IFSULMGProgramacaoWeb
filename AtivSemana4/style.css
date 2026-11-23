@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 :root {
     --cor-fundo-principal: #F6E2E0;
     --container: #f7dfc7;
@@ -20,124 +15,100 @@ img {
     --texto-secundario: #6B5B59;
     --area-focada: #f0c295;
 }
-
-body {
+body{
     background-color: var(--cor-fundo-principal);
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
     padding: 32px 16px;
+
 }
 
-.container {
+.avatar{
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    
+}
+.avatar img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 4px 12px rgba(44, 30, 27, 0.12);
+}
+.container-principal{
     background-color: var(--container);
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
     max-width: 720px;
-    padding: 20px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(46, 36, 35, 0.12);
-    border-radius: 16px;
-}
-
-.cabecalho {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 520px;
     padding: 15px;
-    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 14px rgba(44, 30, 27, 0.12) ;
 }
 
-.cabecalho h1 {
-    font-size: 32px;
-    line-height: 1.2;
-    color: var(--texto-principal);
-}
-
-.cabecalho p {
-    font-size: 14px;
+.container-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+    text-align: center;
     line-height: 1.5;
+    gap: 15px;
+    margin-bottom: 25px;
     color: var(--texto-principal);
 }
 
-.avatar {
-    width: 150px;
-    height: 150px;
-    border: 5px solid #FFFFFF;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(44, 30, 27, 0.12);
-}
-
-.container-sec {
-    width: 100%;
-    max-width: 480px;
-}
-
-.container-formulario {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.container-formulario form {
+.container-form{
     background-color: var(--fundo-formulario);
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(44, 30, 27, 0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.grupo-secao {
     border: 1px solid var(--borda-formulario);
     border-radius: 12px;
-    padding: 16px;
+    box-shadow: 3px 4px 14px rgba(44, 30, 27, 0.12);
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    text-align: left;
-}
-
-.grupo-secao legend {
-    padding: 0 8px;
-    font-size: 15px;
-    font-weight: 600;
+    gap: 20px;
+    width: 100%;
+    max-width: 480px;
     color: var(--texto-principal);
-}
 
-.campo {
+}
+.campo-form{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    gap: 6px;
-    color: var(--texto-principal);
-}
+    padding: 8px 25px;
+    gap: 5px;
 
-.campo label {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--texto-principal);
+}
+.grupo-secao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 12px;
+    border: 1px solid var(--borda-formulario);
+}
+.genero{
+    display: flex;
+    gap: 10px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    accent-color: var(--botao-envio);
+    cursor: pointer;
+    
 }
 
 input[type="text"],
-input[type="email"],
 input[type="tel"],
 input[type="date"],
 input[type="password"],
+input[type="email"],
 input[type="file"],
 select,
-textarea {
+textarea{
     width: 100%;
     padding: 10px 12px;
     border: 1px solid var(--borda-formulario);
@@ -149,11 +120,26 @@ textarea {
 }
 
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder{
     color: var(--texto-secundario);
 }
 
-input:focus,
+input[type="file"]::file-selector-button{
+    background-color: var(--botao-envio);
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+}
+input[type="file"]::file-selector-button:hover{
+    background-color: var(--botao-envio);
+}
+
+input:not([type="radio"]):not([type="checkbox"]):focus,
 select:focus,
 textarea:focus {
     outline: none;
@@ -161,68 +147,43 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(240, 194, 149, 0.35);
 }
 
-textarea {
-    resize: vertical;
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none;
 }
 
-.opcoes-linha {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 2px;
-}
-
-.opcoes-coluna {
+.acoes{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 2px;
-}
-
-.opcao-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 14px;
-    font-weight: 400 !important;
-    cursor: pointer;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    accent-color: var(--botao-envio);
-    cursor: pointer;
-}
-
-.acoes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-button {
     width: 100%;
-    padding: 11px;
+    gap: 10px;
+    margin: 15px 0;
+
+}
+.envio{
     background-color: var(--botao-envio);
     color: #FFFFFF;
+}
+
+.limpar{
+    background-color: var(--fundo-formulario);
+    border: 1px solid var(--borda-formulario);  
+}
+
+button{
+    padding: 12px 12px;
+    border-radius: 20px;
     border: none;
-    border-radius: 999px;
     font-family: inherit;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
 }
-
-button:hover {
+.envio:hover{
+    background-color: var(--botao-envio-hover);
+}
+.limpar:hover{
     background-color: var(--botao-envio-hover);
 }
 
-.btn-limpar {
-    background-color: transparent;
-    color: var(--texto-principal);
-    border: 1px solid var(--borda-formulario);
-}
-
-.btn-limpar:hover {
-    background-color: var(--cor-fundo-principal);
-}
